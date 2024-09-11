@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 38s;
+
+        -webkit-animation-fill-mode: backwards;
+        animation-fill-mode: backwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;  
+ 
+}
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+    
+    }
+
+    body.light-mode{
+        background-color: white;
+        color: black;
+    }
+    body.dark-mode{
+        background-color: black;
+        color: #fff;
+    }
+.weather-app {
+    background-color:#8AA29E;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(111, 108, 108, 0.1);
+    text-align: center;
+ 
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#686963;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #778da9;
+}
+
+.weather-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.weather-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+.buton{
+    padding-top: 3cap;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    height: 5vh;
+    width: 5vmin;
+    border-radius: 1rem;
+    cursor: pointer;
+}
